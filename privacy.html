@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>4D Signal - Privacy Policy</title>
+<style>body{font-family:system-ui;max-width:680px;margin:40px auto;padding:0 20px;color:#111;line-height:1.55}
+h1{color:#16a34a}h2{margin-top:26px;font-size:17px}</style></head><body>
+<h1>4D Signal — Privacy Policy</h1>
+<p><b>Effective date:</b> November 2026 · 4D Meridian Suite · Contact via the Chrome Web Store
+listing support channel.</p>
+
+<h2>1. What data the extension collects, and from where</h2>
+<ul>
+<li><b>Meeting audio and transcripts (Pro/Enterprise tiers):</b> captured only
+when a meeting host explicitly starts Record Mode. Recording is announced to
+all participants in the meeting by the tool itself - there is no silent
+recording mode. Audio is processed on the user's device.</li>
+<li><b>VoIP call metadata (Enterprise tier):</b> call start/end times and
+duration, processed locally.</li>
+<li><b>Phishing/security telemetry (Meeting Mode):</b> aggregate detection
+events (e.g. "suspicious link blocked") with no message content.</li>
+<li><b>Typing cadence and pointer timing (sensor layer, opt-in):</b> timing
+statistics only - inter-key intervals and pointer velocity aggregates. Key
+values, page content, form fields, and passwords are never read; the code path
+does not exist.</li>
+<li><b>Settings and usage counters:</b> stored locally (chrome.storage).</li>
+</ul>
+<p><b>Domains accessed:</b> the extension communicates only with
+<code>127.0.0.1</code> (the locally-installed 4D Signal sidecar on the user's
+own machine) and, for Enterprise VoIP, the SIP provider the customer
+themselves configures. No other domains are contacted. There are no analytics
+endpoints, no telemetry servers, and no 4D Meridian servers of any kind.</p>
+
+<h2>2. How data is handled</h2>
+<p>All captured data is processed and stored <b>locally on the user's
+device</b>. Transcripts and recordings are stored under the user's control in
+local or customer-managed storage. The optional local sidecar maintains a
+tamper-evident audit log of security events on the same machine. Data is
+encrypted at rest where the feature requires it.</p>
+
+<h2>3. How data is used</h2>
+<ul>
+<li>Meeting records are used solely to provide the transcript/recording
+feature the host explicitly started.</li>
+<li>Security telemetry is used solely to detect and block phishing and
+malicious content for the user.</li>
+<li>Sensor statistics are used solely for behavioral anomaly detection on
+that workstation.</li>
+<li>No data is used for advertising, profiling, creditworthiness, or any
+purpose unrelated to the extension's single purpose.</li>
+</ul>
+
+<h2>4. Data sharing</h2>
+<p><b>4D Signal sells, shares, rents, or transfers no user data to anyone -
+ever.</b> There is no third-party analytics, no advertising SDK, no cloud
+sync. The only network destinations are the user's own local sidecar and the
+customer-configured SIP provider (Enterprise). Because data never leaves the
+device except to those user-controlled endpoints, cross-border transfer laws
+(GDPR Ch. V, POPIA s72) are satisfied by architecture.</p>
+
+<h2>5. User rights and data deletion</h2>
+<ul>
+<li>Users can view, export, and delete their recordings and transcripts at
+any time from the tool.</li>
+<li>Uninstalling the extension removes its locally stored data.</li>
+<li>A full local wipe (including cryptographic key destruction, making data
+unrecoverable) is available in settings.</li>
+<li>POPIA s23/GDPR access requests: all data is on the user's own device -
+access is direct via the tool's export function.</li>
+</ul>
+
+<h2>6. Consent and transparency</h2>
+<p>Recording requires explicit host action and announces itself to
+participants. The sensor layer is off by default and activates only after an
+explicit, informed opt-in on the workstation, which is logged. Employees are
+never monitored covertly by this tool.</p>
+
+<h2>7. Changes</h2>
+<p>Material changes to this policy will be reflected in an updated version on
+this page with a revised effective date.</p>
+</body></html>
